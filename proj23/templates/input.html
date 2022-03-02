@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor="blue">
+<form action="insert" method="post">
+{% csrf_token %}
+{{ emp.as_p }}
+<input type="submit" value="add">
+</form>
+</body>
+</html>

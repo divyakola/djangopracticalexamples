@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor="powderblue">
+{# for loops representation in templates #}
+{% for rec in emp %}
+   {{ rec }}<br>
+{% endfor %}
+<hr>
+{% for rec in emp|dictsort:'ename' %}
+   {{ rec }}<br>
+{% endfor %}
+<hr>
+{% for rec in emp %}
+   {{ rec|upper }}<br>
+{% endfor %}
+<hr>
+{% comment %}
+represent the conditional statements in templates
+like if
+     elif
+     else
+{% endcomment %}
+{% if now.day >= 1 and now.day <= 7 %}
+    <h2>we are in first week of this month</h2>
+{% elif now.day >= 8 and now.day <= 14 %}
+    <h2>we are in second week of this month</h2>
+{% elif now.day >= 15 and now.day <= 21 %}
+    <h2>we are in third week of this month</h2>
+{% elif now.day >= 22 and now.day <= 28 %}
+    <h2>we are in fourth week of this month</h2>
+{% else %}
+    <h2>we are in fifth week of this month</h2>
+{% endif %}
+</body>
+</html>

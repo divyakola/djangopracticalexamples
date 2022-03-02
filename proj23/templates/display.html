@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor="yellow">
+<table border=5>
+<tr style="color:red">
+<th>Id</th>
+<th>Name</th>
+<th>Salary</th>
+<th>Dept.No</th>
+</tr>
+{% for rec in records %}
+   <tr style="color:blue">
+       <td>{{rec.eid}}</td>
+       <td>{{rec.ename}}</td>
+       <td>{{rec.esal}}</td>
+       <td>{{rec.edno}}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

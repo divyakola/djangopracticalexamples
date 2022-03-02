@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<script type="text/javascript" src="{% static 'js/wishes.js' %}">
+</script>
+</head>
+<body>
+<div>
+<img src="{% static 'images/Guido.jpg' %}">
+<form action="insert" method="post">
+{% csrf_token %}
+{{ eform.as_p }}
+<input type="submit" value="add">
+</form>
+</div>
+</body>
+</html>

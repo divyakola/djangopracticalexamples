@@ -1,0 +1,15 @@
+body{
+ background-image:url("https://images.unsplash.com/photo-1645161694252-90ff1c36345f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+ background-repeat:no-repeat;
+ background-size:cover;
+}
+
+table,th,td{
+    border:2px solid red;
+    text-align:center;
+ }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

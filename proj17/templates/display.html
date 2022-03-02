@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor="orange">
+<table border="5">
+<tr>
+<th>Sid</th>
+<th>Sname</th>
+<th>Sadd</th>
+<th>Sfee</th>
+<th>Sstatus</th>
+<tr>
+{% for rec in records %}
+<tr>
+   <td>{{rec.sid}}</td>
+   <td>{{rec.sname}}</td>
+   <td>{{rec.sadd}}</td>
+   <td>{{rec.sfee}}</td>
+   <td>{{rec.sstatus}}</td>
+</tr>
+{% endfor %}
+</table>
+<br>
+</body>
+</html>

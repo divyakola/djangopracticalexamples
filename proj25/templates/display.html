@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<link rel="stylesheet" href="{% static 'css/tempo.css' %}">
+</head>
+<body>
+<table class="center">
+<tr>
+<th>Eid</th>
+<th>Ename</th>
+<th>Esalary</th>
+<th>Dept.No</th>
+</tr>
+{% for rec in records %}
+<tr><th>{{rec.eid}}</th>
+    <th>{{rec.ename}}</th>
+    <th>{{rec.esal}}</th>
+    <th>{{rec.edno}}</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
